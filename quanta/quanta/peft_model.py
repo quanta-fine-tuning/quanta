@@ -23,7 +23,7 @@ import torch
 from accelerate import dispatch_model, infer_auto_device_map
 from accelerate.hooks import AlignDevicesHook, add_hook_to_module, remove_hook_from_submodules
 from accelerate.utils import get_balanced_memory
-from huggingface_hub import hf_hub_download
+from huggingface_hub import hf_hub_download, login
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 from transformers import PreTrainedModel
 from transformers.modeling_outputs import SequenceClassifierOutput, TokenClassifierOutput
@@ -131,6 +131,7 @@ class PeftModel(PushToHubMixin, torch.nn.Module):
             filename = os.path.join(model_id, WEIGHTS_NAME)
         else:
             try:
+                login(os.environ['HF_TOKEN'])
                 filename = hf_hub_download(model_id, WEIGHTS_NAME)
             except:  # noqa
                 raise ValueError(

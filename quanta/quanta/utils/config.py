@@ -19,7 +19,7 @@ import os
 from dataclasses import asdict, dataclass, field
 from typing import Optional, Union
 
-from huggingface_hub import hf_hub_download
+from huggingface_hub import hf_hub_download, login
 from transformers.utils import PushToHubMixin
 
 from .adapters_utils import CONFIG_NAME
@@ -100,6 +100,7 @@ class PeftConfigMixin(PushToHubMixin):
             config_file = os.path.join(pretrained_model_name_or_path, CONFIG_NAME)
         else:
             try:
+                login(os.environ['HF_TOKEN'])
                 config_file = hf_hub_download(pretrained_model_name_or_path, CONFIG_NAME)
             except Exception:
                 raise ValueError(f"Can't find config.json at '{pretrained_model_name_or_path}'")

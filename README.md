@@ -19,21 +19,12 @@ Official implementation of **QuanTA**: Efficient High-Rank Fine-Tuning of LLMs w
 
  ```bash
 git clone https://github.com/quanta-fine-tuning/quanta.git
- ```
- ```bash
 cd quanta/quanta/
- ```
- ```bash
 pip install -e .
- ```
- ```bash
 pip install wandb datasets accelerate sentencepiece opt_einsum
- ```
- ```bash
 cd ../run/
- ```
- ```bash
+# complete llama signup at https://huggingface.co/meta-llama/Llama-2-7b-hf
+# and get HF token from https://huggingface.co/settings/tokens
+export HF_TOKEN=<your-huggingface-read-token>
 bash run.sh
- ```
-
-
+```
