@@ -33,7 +33,9 @@ pip install wandb datasets accelerate sentencepiece opt_einsum
 cd ../run/
  ```
  ```bash
-bash run.sh
+sh run.sh
  ```
+##### Note:
+`numpy` may need to be downgraded to `1.26.4`
 
 
