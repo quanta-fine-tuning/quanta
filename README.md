@@ -1,4 +1,4 @@
-# QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation
+# (NeurIPS 2024) QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation
 Official implementation of **QuanTA**: Efficient High-Rank Fine-Tuning of LLMs with **Quan**tum-Informed **T**ensor **A**daptation (https://arxiv.org/abs/2406.00132)
 
 ![Example Image](figures/quanta_illustration.jpg)
