@@ -5,7 +5,7 @@ MODEL_NAME="${MODEL_NAME[-1]}"
 
 TASK=${TASK:-COMMONSENSE170K} # please download the dataset from https://github.com/AGI-Edgerunners/LLM-Adapters
 
-EPOCH=${EPOCH:-1}
+EPOCH=${EPOCH:-5}
 BS=${BS:-4}
 GA=1
 LR=${LR:-5e-5}
