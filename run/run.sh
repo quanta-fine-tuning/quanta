@@ -1,3 +1,4 @@
+#!/bin/bash
 MODEL=${MODEL:-meta-llama/Llama-2-7b-hf}
 MODEL_NAME=(${MODEL//\// })
 MODEL_NAME="${MODEL_NAME[-1]}"
