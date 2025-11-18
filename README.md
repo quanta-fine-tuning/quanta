@@ -13,7 +13,7 @@ Official implementation of **QuanTA**: Efficient High-Rank Fine-Tuning of LLMs w
     editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
     pages = {92210--92245},
     publisher = {Curran Associates, Inc.},
-    title = {QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation},
+    title = {{QuanTA}: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation},
     url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/a7c17115db36193f6b83b71b0fe1d416-Paper-Conference.pdf},
     volume = {37},
     year = {2024}
