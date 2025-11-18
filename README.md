@@ -6,12 +6,17 @@ Official implementation of **QuanTA**: Efficient High-Rank Fine-Tuning of LLMs w
 ### To cite our paper
 ```
 @inproceedings{
-      chen2024quanta,
-      title={Quan{TA}: Efficient High-Rank Fine-Tuning of {LLM}s with Quantum-Informed Tensor Adaptation},
-      author={Zhuo Chen and Rumen Dangovski and Charlotte Loh and Owen M Dugan and Di Luo and Marin Soljacic},
-      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-      year={2024},
-      url={https://openreview.net/forum?id=EfpZNpkrm2}
+    chen2024quanta,
+    author = {Chen, Zhuo and Dangovski, Rumen and Loh, Charlotte and Dugan, Owen and Luo, Di and Solja\v{c}i\'{c}, Marin},
+    booktitle = {Advances in Neural Information Processing Systems},
+    doi = {10.52202/079017-2928},
+    editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+    pages = {92210--92245},
+    publisher = {Curran Associates, Inc.},
+    title = {QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/a7c17115db36193f6b83b71b0fe1d416-Paper-Conference.pdf},
+    volume = {37},
+    year = {2024}
 }
 ```
 
